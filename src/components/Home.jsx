@@ -43,11 +43,13 @@ const Home = () => {
                     placeholder='Title'
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
+                    required
                 />
                 <textarea
                     placeholder='Description'
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
+                    required
                 ></textarea>
                 <button type="submit">Add</button>
             </form>
